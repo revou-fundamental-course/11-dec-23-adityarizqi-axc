@@ -10,10 +10,10 @@
     <nav>
       <img src="assets/school-logo.png" alt="logo" class="logo" />
       <ul class="navbar">
-        <li class="nav-item" id="home">Home</li>
-        <li class="nav-item">Our Profile</li>
-        <li class="nav-item">Achievement</li>
-        <li class="nav-item" id="message">Message Us</li>
+        <a href="#" class="nav-item" id="home">Home</a>
+        <a href="#our-profile" class="nav-item">Our Profile</a>
+        <a href="#vision" class="nav-item">Vision</a>
+        <a href="#message-us" class="nav-item" id="message">Message Us</a>
       </ul>
     </nav>
 
@@ -29,7 +29,7 @@
 
     <!-- Our Profile -->
 
-    <section class="our-profile">
+    <section class="our-profile" id="our-profile">
       <h2>Our Profile</h2>
       <div class="list-profile">
         <div class="profile">
@@ -43,7 +43,7 @@
         </div>
 
         <div class="profile">
-          <img src="assets/school-lab.jpg" alt="lab" />
+          <img src="assets/school-chemist.jpg" alt="lab" />
           <p>laboratory</p>
         </div>
 
@@ -54,46 +54,79 @@
       </div>
     </section>
 
+    <section id="vision">
+      <img src="assets/vission.png" alt="vision" class="vision" />
+      <div class="visimisi">
+        <div class="text">
+          <h3>Our Vision</h3>
+          <p>
+            To be a beacon of excellence, nurturing the leaders and innovators
+            of tomorrow
+          </p>
+        </div>
+        <div class="text">
+          <h3>Our Mission</h3>
+          <ol type="1">
+            <li>Academic Excellence</li>
+            <li>Character Development</li>
+            <li>Innovation and Creativity</li>
+            <li>Global Perspective</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
     <!-- Message Us -->
 
-    <section class="message">
+    <section class="message" id="message-us">
       <h2>Message Us</h2>
       <div class="message-us">
-        <div>
-          <div class="form">
-            <div class="form-list">
-              <label for="name">Nama : </label>
+        <div class="form">
+          <div class="form-list">
+            <p>Nama</p>
+            <div class="input">
+              <p>:</p>
               <input id="name" type="text" placeholder="Nama" />
             </div>
-            <div class="form-list">
-              <label for="date">Tanggal Lahir : </label>
+          </div>
+          <div class="form-list">
+            <p>Tanggal Lahir</p>
+            <div class="input">
+              <p>:</p>
               <input type="date" name="tanggal" id="date" />
             </div>
-            <div class="form-list">
-              <label for="kelamin">Jenis Kelamin : </label>
-              <input
-                id="kelamin"
-                type="radio"
-                value="cowo"
-                class="jenis-kelamin"
-              />
-              <label for="cowo"> Laki-laki </label>
-              <input
-                id="kelamin"
-                type="radio"
-                value="cewe"
-                class="jenis-kelamin"
-              />
-              <label for="cewe"> Perempuan </label>
-            </div>
-            <div class="form-list">
-              <label for="pesan">Pesan : </label>
-              <textarea name="pesan" id="pesan" cols="30" rows="10"></textarea>
-            </div>
-            <div class="form-list">
-              <input type="submit" value="submit" />
+          </div>
+          <div class="jenisKelamin" id="jenisKelamin">
+            <p>Jenis Kelamin</p>
+            <p>:</p>
+            <input
+              id="kelamin"
+              type="radio"
+              value="cowo"
+              class="jenis-kelamin"
+            />
+            <label for="cowo"> Laki-laki </label>
+            <input
+              id="kelamin"
+              type="radio"
+              value="cewe"
+              class="jenis-kelamin"
+            />
+            <label for="cewe"> Perempuan </label>
+          </div>
+          <div class="form-list">
+            <p>Pesan</p>
+            <div class="input">
+              <p>:</p>
+              <textarea
+                id="pesan "
+                name="isi-pesan"
+                cols="46"
+                rows="10"
+              ></textarea>
             </div>
           </div>
+          <input type="submit" value="submit" class="submit-btn" />
         </div>
         <div class="return" id="return"></div>
       </div>
