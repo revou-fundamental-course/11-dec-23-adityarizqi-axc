@@ -8,22 +8,99 @@
   </head>
   <body>
     <nav>
-      <img src="" alt="logo" class="logo" />
+      <img src="assets/school-logo.png" alt="logo" class="logo" />
       <ul class="navbar">
-        <li>Home</li>
-        <li>Our Profile</li>
-        <li>Achievement</li>
-        <li>Message Us</li>
+        <li class="nav-item" id="home">Home</li>
+        <li class="nav-item">Our Profile</li>
+        <li class="nav-item">Achievement</li>
+        <li class="nav-item" id="message">Message Us</li>
       </ul>
     </nav>
+
     <header>
       <h1>Hi Adit, welcome to my website</h1>
-      <h4>This is our best school</h4>
+      <h4>School for bright our future</h4>
       <img
         src="assets/school-building.jpg"
         alt="school"
         class="school-building"
       />
     </header>
+
+    <!-- Our Profile -->
+
+    <section class="our-profile">
+      <h2>Our Profile</h2>
+      <div class="list-profile">
+        <div class="profile">
+          <img src="assets/school-canteen.jpg" alt="canteen" />
+          <p>canteen</p>
+        </div>
+
+        <div class="profile">
+          <img src="assets/school-field.jpg" alt="field" />
+          <p>field</p>
+        </div>
+
+        <div class="profile">
+          <img src="assets/school-lab.jpg" alt="lab" />
+          <p>laboratory</p>
+        </div>
+
+        <div class="profile">
+          <img src="assets/school-class.jpg" alt="class" />
+          <p>classroom</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Message Us -->
+
+    <section class="message">
+      <h2>Message Us</h2>
+      <div class="message-us">
+        <div>
+          <div class="form">
+            <div class="form-list">
+              <label for="name">Nama : </label>
+              <input id="name" type="text" placeholder="Nama" />
+            </div>
+            <div class="form-list">
+              <label for="date">Tanggal Lahir : </label>
+              <input type="date" name="tanggal" id="date" />
+            </div>
+            <div class="form-list">
+              <label for="kelamin">Jenis Kelamin : </label>
+              <input
+                id="kelamin"
+                type="radio"
+                value="cowo"
+                class="jenis-kelamin"
+              />
+              <label for="cowo"> Laki-laki </label>
+              <input
+                id="kelamin"
+                type="radio"
+                value="cewe"
+                class="jenis-kelamin"
+              />
+              <label for="cewe"> Perempuan </label>
+            </div>
+            <div class="form-list">
+              <label for="pesan">Pesan : </label>
+              <textarea name="pesan" id="pesan" cols="30" rows="10"></textarea>
+            </div>
+            <div class="form-list">
+              <input type="submit" value="submit" />
+            </div>
+          </div>
+        </div>
+        <div class="return" id="return"></div>
+      </div>
+    </section>
+
+    <footer>
+      <p>Created By Aditya</p>
+    </footer>
   </body>
 </html>

@@ -8,26 +8,135 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 0.2rem;
+  background-color: white;
+  border-bottom: 1px solid #8d8d8d;
+  margin-bottom: 5rem;
+}
+
+.logo {
+  width: 12rem;
 }
 
 .navbar {
   list-style-type: none;
   margin-right: 5rem;
-  border: 1px solid #8d8d8d;
-  height: 5rem;
+  padding: 2rem;
 }
 
-.navbar li {
+.nav-item {
   display: inline;
   padding: 2rem;
+  border: 1px solid #8d8d8d;
+  transition: 0.2s;
+}
+
+.nav-item:hover {
+  cursor: pointer;
+  background-color: #c9c9c9;
+  transition: 0.5s;
+}
+
+#home {
+  border-start-start-radius: 10%;
+  border-end-start-radius: 10%;
+}
+
+#message {
+  border-end-end-radius: 10%;
+  border-start-end-radius: 10%;
 }
 
 header {
   text-align: center;
+  padding-bottom: 5rem;
+  border-bottom: 1px solid #8d8d8d;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: bolder;
+}
+
+h4 {
+  font-size: 1.4rem;
+  font-style: italic;
+  font-weight: 100;
 }
 
 .school-building {
   height: 50vh;
-  width: 100vw;
+  width: 90vw;
   object-fit: cover;
+  margin-top: 3rem;
+  border-radius: 2rem;
+}
+
+.our-profile {
+  display: inline;
+}
+
+.our-profile h2 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 4rem;
+}
+
+.list-profile {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+  justify-content: center;
+}
+
+.profile {
+  margin: 0 2rem 0 2rem;
+  text-align: center;
+  justify-content: center;
+}
+
+.profile > img {
+  width: 20rem;
+  height: 20rem;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 0.2rem solid #8d8d8d;
+}
+
+.profile > p {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+
+.message {
+  border-top: 1px solid #8d8d8d;
+}
+
+.message-us {
+  display: flex;
+  justify-content: space-around;
+}
+
+.message h2 {
+  font-size: 3rem;
+  margin-left: 19rem;
+}
+
+.return {
+  height: 15rem;
+  width: 40rem;
+  border: 1px solid #8d8d8d;
+  border-radius: 1rem;
+}
+
+footer {
+  border-top: 1px solid #8d8d8d;
+  font-weight: 100;
+  text-align: right;
+  margin-top: 5rem;
+  padding: 2rem;
+}
+
+footer p {
+  margin-right: 2rem;
 }
