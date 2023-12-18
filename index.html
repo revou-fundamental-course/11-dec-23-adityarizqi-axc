@@ -18,7 +18,7 @@
     </nav>
 
     <header>
-      <h1>Hi Adit, welcome to my website</h1>
+      <h1>Hi <span id="halo-nama">Kamu</span>, welcome to our website</h1>
       <h4>School for bright our future</h4>
       <img
         src="assets/school-building.jpg"
@@ -81,19 +81,31 @@
     <section class="message" id="message-us">
       <h2>Message Us</h2>
       <div class="message-us">
-        <div class="form">
+        <form name="message-form" onsubmit="return validateForm()">
           <div class="form-list">
             <p>Nama</p>
             <div class="input">
               <p>:</p>
-              <input id="name" type="text" placeholder="Nama" />
+              <input
+                id="name"
+                type="text"
+                placeholder="Nama"
+                name="name"
+                required
+              />
             </div>
           </div>
           <div class="form-list">
             <p>Tanggal Lahir</p>
             <div class="input">
               <p>:</p>
-              <input type="date" name="tanggal" id="date" />
+              <input
+                type="date"
+                name="tanggal"
+                id="date"
+                nama="tanggal"
+                required
+              />
             </div>
           </div>
           <div class="jenisKelamin" id="jenisKelamin">
@@ -102,17 +114,21 @@
             <input
               id="kelamin"
               type="radio"
-              value="cowo"
+              value="Laki-laki"
               class="jenis-kelamin"
+              name="gender"
+              required
             />
-            <label for="cowo"> Laki-laki </label>
+            <p>Laki-laki</p>
             <input
               id="kelamin"
               type="radio"
-              value="cewe"
+              value="Perempuan"
               class="jenis-kelamin"
+              name="gender"
+              required
             />
-            <label for="cewe"> Perempuan </label>
+            <p>Perempuan</p>
           </div>
           <div class="form-list">
             <p>Pesan</p>
@@ -120,20 +136,33 @@
               <p>:</p>
               <textarea
                 id="pesan "
-                name="isi-pesan"
+                name="message-from"
                 cols="46"
                 rows="10"
+                required
               ></textarea>
             </div>
           </div>
-          <input type="submit" value="submit" class="submit-btn" />
+          <input type="submit" value="submit" class="submit-btn" id="submit" />
+        </form>
+        <div class="return" id="return">
+          <p class="point">Current time : <span id="time-api"></span></p>
+          <br />
+          <p class="point">Nama : <span id="sender-name"></span></p>
+          <p class="point">
+            Tanggal Lahir : <span id="sender-birth-date"></span>
+          </p>
+          <p class="point">Jenis Kelamin : <span id="sender-gender"></span></p>
+          <p class="point">Pesan : <span id="sender-message"></span></p>
         </div>
-        <div class="return" id="return"></div>
       </div>
     </section>
 
     <footer>
       <p>Created By Aditya</p>
     </footer>
+
+    <!-- Java Script -->
+    <script src="js/script.js"></script>
   </body>
 </html>
