@@ -298,5 +298,6 @@ footer p {
     margin-left: 0;
     margin-top: 3rem;
     width: 100%;
+    min-height: 20rem;
   }
 }
