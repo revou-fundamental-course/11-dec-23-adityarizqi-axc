@@ -5,6 +5,30 @@ function gantiNama() {
 
 gantiNama();
 
+let navbar = document.getElementById("navbar");
+let icon = document.getElementById("hamburger-menu");
+
+// Ketika hamburger menu diklik
+icon.addEventListener("click", function () {
+  navbar.classList.toggle("hidden");
+});
+
+let homebtn = document.getElementById("home");
+let profilebtn = document.getElementById("ourProfile");
+let visionbtn = document.getElementById("visionMission");
+let messagebtn = document.getElementById("message");
+
+navbar.addEventListener("click", function (e) {
+  if (
+    !homebtn.contains(e.target) &&
+    !profilebtn.contains(e.target) &&
+    !visionbtn.contains(e.target) &&
+    !messagebtn.contains(e.target)
+  ) {
+    navbar.classList.toggle("hidden");
+  }
+});
+
 function validateForm() {
   let name = document.forms["message-form"]["name"].value;
   let birthDate = document.forms["message-form"]["tanggal"].value;

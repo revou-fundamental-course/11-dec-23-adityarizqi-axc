@@ -22,7 +22,7 @@ nav {
   width: 12rem;
 }
 
-.navbar {
+nav #navbar {
   list-style-type: none;
   margin-right: 5rem;
   padding: 2rem;
@@ -44,14 +44,21 @@ nav {
   transition: 0.5s;
 }
 
+.hamburger-menu {
+  margin-right: 2rem;
+  max-width: 5rem;
+  display: none;
+  cursor: pointer;
+}
+
 #home {
-  border-start-start-radius: 10%;
-  border-end-start-radius: 10%;
+  border-start-start-radius: 1rem;
+  border-end-start-radius: 1rem;
 }
 
 #message {
-  border-end-end-radius: 10%;
-  border-start-end-radius: 10%;
+  border-end-end-radius: 1rem;
+  border-start-end-radius: 1rem;
 }
 
 header {
@@ -227,6 +234,46 @@ footer p {
 /* Media Querry */
 
 /* Mobile */
+
+@media (max-width: 900px) {
+  #navbar {
+    transition: 0.5s;
+    position: absolute;
+    width: 100%;
+    height: 190vh;
+    background-color: rgba(255, 255, 255, 0.925);
+  }
+
+  nav img {
+    max-width: 7rem;
+  }
+
+  nav .hidden {
+    display: none;
+    opacity: 0%;
+    transition: 0.5s;
+  }
+
+  #home {
+    margin-top: 55rem;
+  }
+
+  .nav-item {
+    justify-content: center;
+    z-index: 99;
+    border-radius: 1rem;
+    display: flex;
+    margin: 2rem 4rem 2rem 0;
+    border: 1px solid #8d8d8d;
+    transition: 0.2s;
+    text-decoration: none;
+    color: #2e2e2e;
+  }
+
+  .hamburger-menu {
+    display: inherit;
+  }
+}
 
 @media (max-width: 768px) {
   .visimisi,
