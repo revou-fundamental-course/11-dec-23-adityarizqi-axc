@@ -36,6 +36,12 @@ function validateForm() {
   let messages = document.forms["message-form"]["message-from"].value;
   let timeNow = new Date();
 
+  let messageReturn = document.getElementById("returnText");
+
+  if (messageReturn.classList == "returnText") {
+    messageReturn.classList.toggle("returnText");
+  }
+
   document.getElementById("time-api").innerHTML = timeNow;
   document.getElementById("sender-name").innerHTML = name;
   document.getElementById("sender-birth-date").innerHTML = birthDate;
